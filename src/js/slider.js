@@ -15,10 +15,11 @@ const handleCarousel = () => {
 const changeImages = () => {
 	if (index > carouselImages.length - 1) {
 		// buttonRight.setAttribute('disabled', 'true');
-		index = carouselImages.length - 1;
+		index = 0;
 	} else if (index < 0) {
 		// buttonLeft.setAttribute('disabled', 'true');
-		index = 0;
+
+		index = carouselImages.length - 1;
 	}
 	sliderBox.style.transform = `translateX(${-index * carouselWidth}%)`;
 };

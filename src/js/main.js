@@ -2,6 +2,7 @@ document.querySelector('.header').style.height = window.innerHeight + 'px';
 
 //header btn
 const btns = document.querySelectorAll('.header__btn');
+const circleHeader = document.querySelectorAll('.header__circle');
 
 //navigation
 const hamburger = document.querySelector('.hamburger');
@@ -14,6 +15,8 @@ const navBar = document.querySelector('.nav');
 const year = document.querySelector('.footer__year');
 
 //header btn
+
+
 const showCircle = e => {
 	let btnTopPosition = e.offsetY;
 	let btnLeftPosition = e.offsetX;
