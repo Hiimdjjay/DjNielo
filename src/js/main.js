@@ -1,3 +1,5 @@
+document.querySelector('.header').style.height = window.innerHeight + 'px';
+
 //header btn
 const btns = document.querySelectorAll('.header__btn');
 
