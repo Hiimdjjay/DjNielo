@@ -1,0 +1,153 @@
+@use '../utils/colors' as *;
+
+.contact {
+	background-color: $background-gold-color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__form {
+		position: relative;
+		display: inline-block;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__box-buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__box-label {
+		margin-bottom: 0.2em;
+		text-transform: uppercase;
+	}
+
+	&__box-input {
+		width: 90%;
+		padding: 0.5em 1em;
+		margin-bottom: 0.3em;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		border: 1px solid transparent;
+	}
+
+	&__box-input:focus {
+		outline: 2px solid $main-gold;
+	}
+
+	&__box-error {
+		visibility: hidden;
+		margin-bottom: 0.6em;
+		color: $main-navy;
+		font-size: 1.4rem;
+	}
+
+	.textarea {
+		min-height: 150px;
+		max-height: 400px;
+		text-align: start;
+	}
+
+	&__box-textarea:focus {
+		outline: 2px solid $main-gold;
+	}
+
+	&__button {
+		padding: 0.6em 1.2em;
+		background-color: $main-navy;
+		color: $light-gold;
+		margin: 0.5em 1.5em;
+		width: 60%;
+		border: none;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		&--clear {
+			background: none;
+			border: 2px solid $main-navy;
+			color: $main-navy;
+			font-weight: 600;
+		}
+	}
+
+
+
+	&__pop-up {
+		position: absolute;
+		padding: 2em 3em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 280px;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		background-color: $background-gold-color;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
+		transform: translate(-50%, -50%);
+	}
+
+	&__pop-up-btn {
+		padding: 0.6em 1.2em;
+		background-color: $main-navy;
+		color: $light-gold;
+		margin: 0.5em 1.5em;
+		border: none;
+		text-align: center;
+		width: 60%;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	&__pop-up-text {
+		margin-bottom: 1em;
+		font-size: 1.8rem;
+	}
+}
+
+.contact__box.error .contact__box-input {
+	border: 1px solid rgba(221, 105, 84, 0.781);
+	background-color: rgb(255, 232, 228);
+}
+
+.contact__box.error .contact__box-error {
+	visibility: visible;
+}
+
+@media (min-width: 992px) {
+	.contact {
+		&__form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 80%;
+		}
+
+		&__box-buttons {
+			display: flex;
+			flex-direction: row;
+			justify-content: end;
+			align-items: center;
+			width: 80%;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.contact {
+		&__form {
+			width: 80%;
+		}
+	}
+}

@@ -1,0 +1,101 @@
+@use '../utils/colors' as *;
+
+.footer {
+	background-color: $main-navy;
+	color: $light-font-color;
+
+	.wrapper {
+		padding: 6em 2em 2em;
+	}
+
+	&__box {
+		font-size: 1.4rem;
+	}
+
+	&__box-title {
+		text-transform: uppercase;
+		margin-bottom: 1em;
+		font-size: 3rem;
+		color: $main-gold;
+		font-weight: 700;
+	}
+
+	&__box-desktop {
+		display: none;
+	}
+
+	&__box-social {
+		margin: 2em 0;
+	}
+
+	&__box-link {
+		padding: 0.3em;
+		font-size: 3.6rem;
+		color: $main-gold;
+		transition: color 0.3s;
+		font-size: 3.6rem;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:hover {
+			color: $medium-gold;
+		}
+	}
+	&__bottom-text {
+		text-align: center;
+	}
+
+	&__box-list {
+		list-style: none;
+	}
+
+	&__box-list-item {
+		margin-bottom: 1em;
+		text-transform: uppercase;
+	}
+
+	&__bottom-text {
+		padding: 2em;
+		text-align: center;
+	}
+
+	&__line {
+		border: 1px solid $main-gold;
+	}
+}
+
+@media (min-width: 768px) {
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__box {
+			margin: 0 2em;
+
+			&:first-child {
+				width: 70%;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.footer {
+		&__box-desktop {
+			display: block;
+		}
+
+		&__box {
+			margin: 0 2em;
+			width: 25%;
+
+			&:first-child {
+				width: 50%;
+			}
+		}
+	}
+}

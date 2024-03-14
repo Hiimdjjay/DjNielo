@@ -1,0 +1,21 @@
+.section-padding {
+	padding: 3em 2em;
+}
+
+@media (min-width: 768px) {
+	.section-padding {
+		padding: 4em 2em;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-padding {
+		padding: 5em 2em;
+	}
+}
+
+@media (min-width: 1400px) {
+	.section-padding {
+		padding: 6em 2em;
+	}
+}

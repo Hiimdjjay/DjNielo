@@ -1,0 +1,9 @@
+@use '../utils/colors' as *;
+
+.reviews {
+	&__box {
+		position: relative;
+		width: 100%;
+		z-index: 10;
+	}
+}

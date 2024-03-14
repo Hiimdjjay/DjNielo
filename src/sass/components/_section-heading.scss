@@ -1,0 +1,50 @@
+@use '../utils/colors' as *;
+
+.section-heading {
+	text-align: center;
+	color: $main-navy;
+	text-transform: uppercase;
+	font-size: 2.6rem;
+	margin-bottom: 0.5em;
+}
+
+.section-heading--light {
+	color: $light-font-color;
+}
+
+.section-heading-underline {
+	width: 60px;
+	height: 4px;
+	background-color: $main-gold;
+	margin: 0 auto 2em;
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3.2rem;
+	}
+
+	.section-heading-underline {
+		margin-bottom: 2.5em;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 3.6rem;
+	}
+
+	.section-heading-underline {
+		margin-bottom: 3em;
+	}
+}
+
+@media (min-width: 1400px) {
+	.section-heading {
+		font-size: 4.2rem;
+	}
+
+	.section-heading-underline {
+		margin-bottom: 4em;
+	}
+}

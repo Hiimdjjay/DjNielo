@@ -1,0 +1,82 @@
+@use '../utils/colors' as *;
+
+.info {
+	background-color: #222344;
+	background-image: $navy-gradient;
+	color: $light-font-color;
+
+	&__break {
+		display: none;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2em 0.5em;
+		transition: color 0.3s;
+		padding: 0.5em 0;
+	}
+
+	&__box:hover {
+		color: $main-gold;
+	}
+
+	&__icon {
+		font-size: 3rem;
+		margin-bottom: 0.5em;
+	}
+
+	&__title {
+		font-weight: 600;
+		margin-bottom: 0.5em;
+		font-size: 1.9rem;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__text {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) {
+	.info {
+		&__container {
+			display: flex;
+			justify-content: center;
+			align-items: space-around;
+		}
+
+		&__box {
+			width: 30%;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.info {
+		&__container {
+			display: flex;
+			justify-content: center;
+			align-items: space-around;
+		}
+
+		&__box {
+			width: 30%;
+		}
+
+		&__break {
+			display: inline;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.info {
+		&__break {
+			display: none;
+		}
+	}
+}

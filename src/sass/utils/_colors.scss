@@ -1,0 +1,22 @@
+$pure-white: rgb(255, 255, 255);
+$dark-black: rgb(0, 0, 0);
+$main-gold: #cdad7d;
+$medium-gold: #dbbf94;
+$light-gold: #eeead6;
+$main-navy: rgb(25, 35, 68);
+$background-color: #f4f1ec;
+$background-gold-color: #e7d3b5;
+$light-font-color: #f4f1ec;
+
+// Gradients
+$hero-img-shadow: linear-gradient(
+	45deg,
+	rgba(25, 35, 68, 0.7),
+	rgba(25, 35, 68, 0.7)
+);
+
+$navy-gradient: linear-gradient(
+	90deg,
+	rgba(34, 35, 68, 0.75),
+	rgba(8, 9, 32, 0.75)
+);

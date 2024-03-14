@@ -1,0 +1,69 @@
+@use '../utils/colors' as *;
+
+.gallery {
+	background-color: $main-navy;
+
+	&__slider-img {
+		width: 100%;
+	}
+
+	&__slider {
+		left: 50%;
+		transform: translateX(-50%);
+		position: relative;
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		border: 3px solid $main-gold;
+	}
+
+	&__slider-box {
+		display: flex;
+		transform: translateX(0);
+		transition: transform 0.5s;
+	}
+
+	&__btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		border: none;
+		background-color: rgba(0, 0, 0, 0.6);
+		padding: 0.5em 0.8em;
+		cursor: pointer;
+
+		&--left {
+			left: 0;
+		}
+
+		&--right {
+			right: 0;
+		}
+	}
+
+	&__arrow {
+		color: $light-gold;
+		font-size: 2rem;
+		font-weight: 600;
+	}
+}
+
+@media (min-width: 992px) {
+	.gallery {
+		&__slider {
+			width: 70%;
+		}
+
+		&__slider-img {
+			object-fit: cover;
+		}
+
+		&__btn {
+			padding: 0.8em 1.6em;
+		}
+
+		&__arrow {
+			font-size: 3rem;
+		}
+	}
+}

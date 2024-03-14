@@ -1,0 +1,162 @@
+@use '../utils/colors' as *;
+
+.nav {
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 4em;
+	}
+
+	&__logo {
+		position: absolute;
+		left: 15px;
+		color: $main-gold;
+		padding: 15px;
+		font-size: 2.4rem;
+		text-transform: uppercase;
+		font-weight: 600;
+		z-index: 11;
+		transition: color 0.3s;
+	}
+
+	&__logo:hover {
+		color: $medium-gold;
+	}
+
+	&__items {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		left: 0;
+		padding-top: 4em;
+		height: 100%;
+		width: 100%;
+		background-color: $main-navy;
+		transform: translateY(-110%);
+		transition: transform 1s;
+	}
+
+	.show-menu {
+		transform: translateY(0%);
+	}
+
+	&__item {
+		color: $main-gold;
+		font-size: 2.8rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		margin-bottom: 1em;
+	}
+
+	&__social-media-items--mobile {
+		margin-top: 3em;
+	}
+
+	&__social-media-item--mobile {
+		color: $main-gold;
+		font-size: 3.4rem;
+		z-index: 100;
+		margin: 0.5em;
+	}
+
+	&__social-media-items {
+		display: none;
+	}
+}
+
+.nav-shadow {
+	background-color: $main-navy;
+	background-image: linear-gradient(
+		90deg,
+		rgba(34, 35, 68, 0.75),
+		rgba(8, 9, 32, 0.75)
+	);
+	transition: background-color 0.4s;
+	opacity: 0.98;
+}
+
+@media (min-width: 768px) {
+	.nav {
+		&__logo {
+			left: 25px;
+		}
+
+		&__item {
+			font-size: 3.6rem;
+			margin-bottom: 1em;
+		}
+
+		&__social-media-item--mobile {
+			font-size: 4rem;
+			margin: 0.5em;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.nav {
+		&__logo {
+			position: static;
+			padding: 15px;
+			font-size: 2.2rem;
+			// width: 15%;
+		}
+
+		&__items {
+			position: static;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: auto;
+			padding-top: 0;
+			background-color: transparent;
+			transform: translateY(0);
+			align-self: center;
+		}
+
+		&__item {
+			font-size: 1.8rem;
+			margin: 0 0.1em;
+			padding: 0.5em;
+			margin-bottom: 0em;
+			transition: color, background-color 0.3s;
+		}
+
+		&__item:hover {
+			background-color: rgba(25, 35, 68, 0.4);
+			border-radius: 3px;
+			color: $medium-gold;
+		}
+
+		&__social-media-items--mobile {
+			display: none;
+		}
+
+		&__social-media-items {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__social-media-item {
+			color: $main-gold;
+			padding: 10px;
+			margin: 0.2em;
+			font-size: 2.2rem;
+			transition: color, background-color 0.3s;
+		}
+
+		&__social-media-item:hover {
+			color: $medium-gold;
+			background-color: rgba(25, 35, 68, 0.4);
+		}
+	}
+}
