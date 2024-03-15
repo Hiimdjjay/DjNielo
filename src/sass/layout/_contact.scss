@@ -38,7 +38,7 @@
 		padding: 0.5em 1em;
 		margin-bottom: 0.3em;
 		text-align: center;
-		color: $navy-color;
+		color: $main-navy;
 		font-family: 'Montserrat', sans-serif;
 		border: 1px solid transparent;
 	}
@@ -134,10 +134,11 @@
 		}
 
 		&__box-buttons {
-			display: flex;
+			display: block;
 			flex-direction: row;
-			justify-content: end;
+			justify-content: center;
 			align-items: center;
+			text-align: center;
 			width: 80%;
 		}
 	}
