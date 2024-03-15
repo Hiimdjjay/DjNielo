@@ -38,6 +38,7 @@
 		padding: 0.5em 1em;
 		margin-bottom: 0.3em;
 		text-align: center;
+		color: $navy-color;
 		font-family: 'Montserrat', sans-serif;
 		border: 1px solid transparent;
 	}
@@ -80,8 +81,6 @@
 			font-weight: 600;
 		}
 	}
-
-
 
 	&__pop-up {
 		position: absolute;

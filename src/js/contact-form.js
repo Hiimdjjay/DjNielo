@@ -1,11 +1,11 @@
-// const nameInput = document.querySelector('#name');
-// const emailInput = document.querySelector('#email');
-// const phoneInput = document.querySelector('#phone');
-// const dateInput = document.querySelector('#date');
-// const messageInput = document.querySelector('#message');
-// const popUp = document.querySelector('.contact__pop-up');
-// const btnClear = document.querySelector('.contact__button--clear');
-// const btnSubmit = document.querySelector('.contact__button--submit');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const phoneInput = document.querySelector('#phone');
+const dateInput = document.querySelector('#date');
+const messageInput = document.querySelector('#message');
+const popUp = document.querySelector('.contact__pop-up');
+const btnClear = document.querySelector('.contact__button--clear');
+const btnSubmit = document.querySelector('.contact__button--submit');
 
 // const showError = (input, msg) => {
 // 	const formBox = input.parentElement;
@@ -15,10 +15,10 @@
 // 	text.textContent = msg;
 // };
 
-// const clearError = input => {
-// 	const formBox = input.parentElement;
-// 	formBox.classList.remove('error');
-// };
+const clearError = input => {
+	const formBox = input.parentElement;
+	formBox.classList.remove('error');
+};
 
 // const checkForm = input => {
 // 	input.forEach(el => {
@@ -79,13 +79,13 @@
 // 	checkErrors();
 // });
 
-// btnClear.addEventListener('click', e => {
-// 	e.preventDefault();
-// 	[nameInput, emailInput, dateInput, messageInput].forEach(el => {
-// 		el.value = '';
-// 		clearError(el);
-// 	});
-// });
+btnClear.addEventListener('click', e => {
+	e.preventDefault();
+	[nameInput, emailInput, dateInput, messageInput].forEach(el => {
+		el.value = '';
+		clearError(el);
+	});
+});
 
 // // Dodatkowa funkcja
 
